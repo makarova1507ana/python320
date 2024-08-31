@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <h1> Главная страница </h1>
+    <ul>
+        <li>
+            главная страница
+        </li>
+         <li>
+            каталог
+        </li>
+         <li>
+            новости
+        </li>
+    </ul>
+
+   {% block main_content %}
+    {% endblock main_content %}
+
+
+
+
+
+    <h2>После блока main_content </h2>
+</body>
+</html>
